@@ -74,6 +74,16 @@ export function EventSignupForm({
   const strapiErrors = formState?.strapiErrors?.message;
   const successMessage = formState?.successMessage;
 
+   /*{image && (
+          <StrapiImage
+            src={image.url}
+            alt={image.alt}
+            height={200}
+            width={200}
+            className="signup-form__image"
+          />
+        )}*/
+
   return (
     <section className="signup-form">
       <div className="signup-form__info">
@@ -90,15 +100,6 @@ export function EventSignupForm({
         )}
       </div>
       <form className="signup-form__form" action={formAction}>
-        {image && (
-          <StrapiImage
-            src={image.url}
-            alt={image.alt}
-            height={200}
-            width={200}
-            className="signup-form__image"
-          />
-        )}
         <div className="signup-form__name-container">
           <TextInput
             id="firstName"

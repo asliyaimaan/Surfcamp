@@ -22,7 +22,6 @@ const subscribeSchema = z.object({
 });
 ```
 
-
 Validate your schema:
 ``` ts
  const validatedFields = subscribeSchema.safeParse({
